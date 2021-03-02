@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="draw();">
+    <style>
+     
+    </style>
+   <canvas id="myCanvas" style="width: 150px;height: 150px;">content </canvas>
+    <script>
+/*
+fillRect(x, y, width, height)
+绘制一个填充的矩形
+strokeRect(x, y, width, height)
+绘制一个矩形的边框
+clearRect(x, y, width, height)
+清除指定矩形区域，让清除部分完全透明。
+
+*/
+     function draw() {
+         /**@type  {HTMLCanvasElement}*/
+        var canvas=document.getElementById('myCanvas');
+      if(canvas.getContext){
+          var cxt=canvas.getContext('2d')
+          cxt.fillStyle='rgb(200,0,0)'
+          cxt.fillRect(10,10,55,50)
+          cxt.strokeRect(11,11,60,55)
+          cxt.fillStyle='rgb(20,20,20,0.5)'
+          cxt.fillRect(30,30,55,50)
+      }else{
+          console.log('fail')
+      }
+       }
+    </script>
+</body>
+</html>

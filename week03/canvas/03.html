@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="draw();">
+    <style>
+     
+    </style>
+   <canvas id="myCanvas" width="250" height="250" >content </canvas>
+    <script>
+/*
+fillRect(x, y, width, height)
+绘制一个填充的矩形
+strokeRect(x, y, width, height)
+绘制一个矩形的边框
+clearRect(x, y, width, height)
+清除指定矩形区域，让清除部分完全透明。
+
+*/
+     function draw() {
+         /**@type  {HTMLCanvasElement}*/
+        var canvas=document.getElementById('myCanvas');
+      if(canvas.getContext){
+          var cxt=canvas.getContext('2d')
+          cxt.translate(175,75)
+          for(var i=0;i<6;i++){
+              cxt.save()
+              cxt.fillStyle='rgb('+25*i+','+25*i+',+225)';  
+              for(var j=0;j<i*6;j++){
+              // 画点
+              cxt.rotate(Math.PI*2/(i*6)) //调整角度
+              cxt.beginPath()
+              cxt.arc(0,i*12,5,0,Math.PI*2,true); //每一个小点 随着旋转的圆的轨迹移动
+              cxt.fill();
+      
+              } 
+              cxt.restore()//回复canvas状态
+              
+          }
+        
+        }else{
+          console.log('fail')
+      }
+
+       }
+    </script>
+</body>
+</html>

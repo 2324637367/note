@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        input:disabled{
+            background:pink;
+        }
+      
+    </style>
+    <input type="text " disabled style="width: 200px;height: 200px; ">
+    <script>
+      input= document.getElementsByTagName('input')
+      input.onclick=function(){
+          input.setAttribute('disabled',false)
+      }
+    </script>
+</body>
+</html>

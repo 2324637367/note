@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="draw()">
+    <style>
+      canvas{
+          display: block;
+          margin:  auto;
+
+      }
+    </style>
+   <canvas id="myCanvas" width="250" height="250">content </canvas>
+    <script>
+/*
+fillRect(x, y, width, height)
+绘制一个填充的矩形
+strokeRect(x, y, width, height)
+绘制一个矩形的边框
+clearRect(x, y, width, height)
+清除指定矩形区域，让清除部分完全透明。
+
+*/      
+         /**@type  {HTMLCanvasElement}*/
+        var canvas=document.getElementById('myCanvas');        
+        var cxt=canvas.getContext('2d')
+        var raf;
+        var running=false;
+        var ball={
+            x:100,
+            y:50,
+            vx:5,
+            vy:1,
+            radius:25,
+            color:'pink',
+            draw:function(){
+                cxt.beginPath();
+                cxt.arc(this.x,this.y,this.radius,0,Math.PI*2,true)
+                cxt.closePath();
+                cxt.fillStyle=this.color;
+                cxt.fill();
+            }
+        }
+         function clear(){
+             cxt.fillStyle='rgba(25,25,25,0.3)';
+             cxt.fillRect(0,0,canvas.width,canvas.height);
+         }
+         function draw(){
+             clear();
+             ball.draw();
+             ball.x+=ball.vx;
+             ball.y+=ball.vy;
+             if(ball.y+ball.radius>canvas.height||ball.y-ball.radius<0){
+                 ball.vy=-ball.vy
+             }
+             if(ball.x+ball.radius>canvas.width||ball.x-ball.radius<0){
+                 ball.vx=-ball.vx
+             }
+             if(running){
+                raf=requestAnimationFrame(draw);
+             }
+         }
+         canvas.addEventListener('mousemove',function(e){
+             if(!running){
+                 clear();
+                 ball.x=e.offsetX;
+                 ball.y=e.offsetY;
+                 ball.draw();
+             }
+        canvas.addEventListener('click',function(e){
+            if(!running){
+               raf=window.requestAnimationFrame(draw);
+                running=true;
+            }
+        })
+        canvas.addEventListener('mouseout',function(e){
+            window.cancelAnimationFrame(raf);
+            running=false;
+        });
+        ball.draw()
+         })
+     
+         
+
+       
+    </script>
+</body>
+</html>

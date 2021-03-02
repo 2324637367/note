@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: #efefef;;
+}
+ul{
+    list-style: none;
+    list-style-image: none;
+    
+}
+a{
+    outline-color: #44acb6;
+    color: #44acb6;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    user-select: none;
+}
+.header .header-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav li .dividing {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0,0,0,.2);
+    margin-top: 10px;
+}
+.team-name{
+    max-width: 10em;
+    color: #000;
+    font: 700 20px Calibri,-apple-system,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,Segoe UI,Roboto,sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.header .nav li{
+    float: left;
+    margin: 0 12px;
+    display: block;
+    text-decoration: none;
+    
+}
+li a{
+    display: block;
+    line-height: 32px;
+    color: rgba(0,0,0,.6);
+    text-decoration: none;
+}
+.twr{
+    margin: 0 8px;
+    color: rgba(0,0,0,.32);
+    font-size: 16px;
+    display: inline-block;
+    font: normal normal normal 14px/1 Tower;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: -400px;
+}
+.command-bar a{
+    outline-color: #44acb6;
+    color: #44acb6;
+    text-decoration: none;
+}
+.active a{
+    color: #000;  
+    font-weight: 500;   
+}
+.nav a:hover{
+    outline-color: #44acb6;
+    color: #44acb6;
+    text-decoration: none;
+}
+.header-button{
+    margin-left: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    background-color: #44acb6;
+    border-radius: 50%;
+}
+.head_help{
+    content: "\f08e";
+}
+
+.lab{
+    content: "\f0cd";
+}
+.bell{
+    display: inline-block;
+    font: normal normal normal 14px/1 Tower;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.page{
+    min-height: 600px;
+    border: 1px solid #dbdfd6;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+    background: #fff;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin: 0 300px 0 300px;
+}
+.pageinner{
+    display: block;
+    min-height: 600px;
+    box-sizing: border-box;
+    width: 962px;
+   
+}
+.project-tooles{
+    padding: 20px 30px 30px;
+    font-size: 14px;
+    *zoom: 1;
+    position: relative;
+}
+.project-all{
+    pointer-events: none;
+    color: #fff;
+    background-color: #44acb6;
+    display: inline-block;
+    margin: 0 4px 10px 0;
+    max-width: 100px;
+    min-width: 20px;
+    padding: 0 12px;
+    line-height: 36px;
+    color: #555;
+    text-align: center;
+    border-radius: 20px;
+}
+.command-bar .search{
+    position: absolute;
+    right: 100px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 32px;
+    padding: 0 12px 0 32px;
+    font-size: 14px;
+    line-height: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.12);
+    background-color: transparent;
+    transition: all .2s;
+}
+.search:hover{
+    cursor: pointer;
+    border-color:rgba(0,0,0,.32) ;
+}
+.search:focus {
+    float: right;
+    width: 200px;
+    cursor: text;
+    box-shadow: none;
+    border: 2px solid #44acb6;
+    background-color: #fff;  
+}
+.right-tools{
+    margin-top: -40px;
+    position: absolute;
+    right: 30px;
+}
+.link-view{
+    display: inline-block;
+    width: 18px;
+    color: #ccc;
+    text-align: center;
+}
+.creat-project{
+    margin-right: 5px;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 36px;
+    border-right: 1px solid #ccc;
+    vertical-align: top;
+}
+.switch-view{
+    display: inline-block;
+    width: 18px;
+    color: #ccc;
+    text-align: center;
+}
+.projects{
+    position: relative;
+}
+.projects .project{
+    float: left;
+    display: block;
+    width: 222px;
+    height: 150px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 150px;
+}
+.project .name{
+ position: relative;
+ 
+}
+.project div{
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding-left: 15px;
+    line-height: 50px;
+    transition: background 0.2s;
+}
+.project:hover{
+    background:#e3e3e3 ;
+}

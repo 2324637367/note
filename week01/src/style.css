@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;  
+}
+a{
+    text-decoration: none;
+}
+div{
+    display: block;
+    box-sizing: border-box;
+}
+body{
+    font-family: "微软雅黑";
+    background: #fff;
+    color: #666;
+    overflow-y: scroll;
+    height: 100%;
+    font-family: NotoSans,"Microsoft Yahei",Arial,Helvetica,sans-serif;
+}
+#header{
+    width: 100%;  
+}
+.borderBottom{
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 40px; 
+}
+.containers{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.container{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+.container .row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#header  .row .welcombox{
+    width: auto;
+    float: left;
+    font-size: 12px;
+    line-height: 25px;
+    color: #fff;
+}
+.row img{
+    display: block;
+    float: left;
+    margin-left: 15px;
+}
+ .row a{
+    line-height: 25px;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    width: auto;
+    float: left;
+    cursor: pointer;
+}
+.topContactBox {
+    width: 300px;
+    float: left;
+    margin-left: 600px;
+}
+#navbar .dropdown{
+    position: relative;
+    display: inline-block;
+    transition: background 0.5s;
+
+} 
+#navbar .dropdown:hover{
+    background: rgba(90,90,54,0.5);
+}
+#navbar .dropdown .dropdown-content{
+    z-index: 10;
+    position: absolute;
+     display: none; 
+    background: rgba(0,0,0,0.7);
+}
+
+#navbar .dropdown:hover .dropdown-content{
+    display: block;
+
+}
+#navbar .dropdown-content a{
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align: left;
+
+}
+#navbar .dropdown-content a:hover{
+    background: #21bcd8;
+}
+
+.topContactBox img{
+    
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-left: 15px;
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+.language{
+    float: right;
+    color: #FFF;
+    margin-right: 15px;
+}
+.container .navabar-brand{
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navabar-brand img{
+   display: block;
+   width: 276px;
+   height: 100px;
+   margin-top: -16px;
+   margin-left: -30px;
+}
+#navbar{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.navabar-collapse{
+    border-color: #e7e7e7;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-nav ul> li {
+    float: left;
+    
+}
+ #navbar ul{
+    list-style: none;
+    float: left;
+    margin-left:15px;
+}
+#navbar ul>li a {
+    line-height: 100px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    
+}
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.banner .slider ul li {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: none;
+    overflow: hidden;
+}
+.banner .slider ul >li a img{
+    display: block;
+    width: 100%;
+    height: 467.44px;
+  }
+  .errow{
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 60px;
+      bottom: 50%;
+      background: #666;
+  }
+  .errow img{
+      width:50px;
+      height: 60px;
+  }
+
+  .errow-left{
+      left:0;
+      display: none; 
+        
+  }
+  .errow-right {
+      right:0;
+      display: none;
+  }
+  .Img{
+    position: relative;
+    float: left;
+  }
+  .Img:hover .black{
+    display: block;
+  }
+  .threeImgBox{
+     margin-top: 40px;
+     margin-bottom: 40px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: nowrap;
+  }
+  .content h4{
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .threeImgBox .content p {
+    line-height: 30px;
+    margin: 20px;
+}
+  .threeImgBox .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.0);
+    text-align: center;
+    color: #fff; 
+  }
+  .black{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: black;
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      display: none;
+  }
+  .titlebar{
+    height: auto;
+    overflow: hidden;
+    margin: 15px 0px 15px 0px;
+  }
+  .titlebar h5{
+      display:inline-block;
+    font-size: 18px;
+    line-height: 28px;
+
+  }
+  .titlebar a{
+    text-decoration: none;
+    float: right;
+    border-radius: 20px;
+    display: block;
+    line-height: 25px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ddd;
+    color: #fff;
+    font-size: 12px;
+    transition: background 0.5s
+  }
+  .titlebar a:hover{
+    background: #21bcd8;
+ }
+  .titlebar span{
+    font-size: 18px;
+    line-height: 35px;
+    display: inline-block;
+  }
+  .list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   align-items: center;
+  }
+  .item img{
+    float: left;
+    width: 265.2px;
+    height: 196.8px;
+  }
+  .item a{
+    position: relative;
+    display: block;
+    width: auto;
+    color:#000 ;
+
+  }
+  .container .productBox{
+      margin: -20px;
+      margin-top: 20px;
+      padding: 0;
+  }
+  .list .item{
+      position: relative;
+      text-align: center;
+      line-height: 40px;
+      overflow: hidden;
+  }
+.aboutBox{
+    width: 100%;
+    overflow: hidden;
+    margin: 70px,0,0,0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 70px 450px;
+    background: url(http://www.dongsheng.com/templets/ds/images/about.jpg) no-repeat;
+}
+.aboutBox .title h5{
+    
+    display: inline-block;
+    width: auto;
+    padding: 0px;
+    color: #333;
+    font-size: 28px;
+    line-height: 28px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0;
+}
+.aboutContent{
+    line-height: 31px;
+    padding: 8px 0px 0px 0px;
+    min-width:688.42px ;
+    text-align: center;
+}
+a.aboutMore{
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    padding: 12px 30px;
+    transition: background 0.3s;
+    background: #21bcd8;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+.aboutMore:hover{
+    background: #000;
+     
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsBox{
+   
+
+}
+.newsBox ul{
+    list-style: none;
+}
+.newsBox ul span{
+    color: #21bcd8;
+
+
+}
+.newsBox ul li{
+    border-bottom: 1px  dashed #ccc;
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+    overflow: hidden;
+}
+.newsBox ul li a{
+    
+    font-size: 14px;
+    color: #000;
+}
+footer{
+    background-color: #141414;
+    padding-top:10px;
+    margin-top:40px ;
+}
+.footer{
+   margin-top: 60px;
+    padding: 60px,0,0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLogo{
+    padding-bottom: 40px;
+}
+.footerLogo img{
+    width: 156px;
+    height: 47px;
+}
+.footer .footerContact{
+    line-height: 40px;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.item .footerTitle{
+    font-size: 20px;
+    line-height: 40px;
+    height: 45px;
+    margin-bottom: 20px
+}
+.footerContent a{
+    font-size: 14px;
+    width: 50%;
+    color: #999;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+.footerContent input{
+    float: left;
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    text-indent: 10px;
+    width: 70%;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border: 0px;
+    background: #444;
+    outline: none;
+}
+.footerContent button{
+    display: block;
+    float: left;
+    width: 25%;
+    background: #21bcd8;
+    color: #fff;
+    border: 0;
+    margin: 0;
+    height: 40px;
+    outline: none;
+}
+.footer .item span{
+    display: block;
+    float: left;
+    width: auto;
+    line-height: 29px;
+    margin-top: 20px;
+}
+footer .copyright{
+    background: #000;
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 25px 0 15px 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+footer .copyright a{
+   color: #C0C0C3;
+}
